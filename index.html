@@ -4,27 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Cálculo IMC </h1>
-    <p>O IMC (índice de massa corporal) é utilizado para<br>
-        sabermos se a relação entre o nosso peso e altura<br>
-        está ideal.
-    </p>
-    <h2>Abaixo temos um vídeo informativo</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/e5OuLSDayxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h2>Calcule o seu imc clicando abaixo</h2>
+    <section class="container">
+        <h1>Cálculo IMC </h1>
+        <p>O IMC (índice de massa corporal) é utilizado para<br>
+            sabermos se a relação entre o nosso peso e altura<br>
+            está ideal.
+        </p>
+        <h2>Abaixo temos um vídeo informativo</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/e5OuLSDayxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Resultado</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Abaixo de 17</td>
+                        <td>Muito abaixo do peso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 17 e 18.5</td>
+                        <td>Abaixo do peso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 18.5 e 24.9</td>
+                        <td>Peso normal</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 25 e 29.9</td>
+                        <td>Acima do peso</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 30 e 34.9</td>
+                        <td>Obesidade 1</td>
+                    </tr>
+                    <tr>
+                        <td>Entre 35 e 39.9</td>
+                        <td>Obesidade 2 (severa)</td>
+                    </tr>
+                    <tr>
+                        <td>Acima de 40</td>
+                        <td>Obesidade 3 (mórbida)</td>
+                    </tr>
+                </tbody>
+            </table>   
+    </section>
+    <section class="container">
+        <h2>Calcule o seu imc clicando abaixo</h2>
 
-    <form id="formulario">
-        <label name="peso">Peso</label>
-        <input id="peso" name="peso" type="text" placeholder="Ex: 80">
-        <label name="altura">Altura</label>
-        <input id="altura" name="altura" type="text" placeholder="EX: 1.80">
-        <button id="confirmar">Confirmar</button>
-        <p>Seu imc é de:</p>
-    </form>
-    
+        <form id="formulario">
+            <label name="peso">Peso</label>
+            <input id="peso" name="peso" type="text" placeholder="Ex: 80">
+            <label name="altura">Altura</label>
+            <input id="altura" name="altura" type="text" placeholder="EX: 1.80">
+            <button id="confirmar">Confirmar</button>
+            <p>Seu imc é de:</p>
+        </form>
+    </section>
     <script src="imc.js"></script>
 </body>
 </html>

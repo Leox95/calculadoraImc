@@ -1,0 +1,15 @@
+.container{
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+table{
+    margin:0 auto;
+}
+th{
+    background-color: lightslategray;
+}
+td, th{
+	border: 1px solid #000000;
+	padding: 8px 10px;
+}
