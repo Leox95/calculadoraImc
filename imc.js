@@ -11,9 +11,14 @@ botaoConfirmarimc.addEventListener("click", function(event){
     console.log(funcaoIMC)
     let paragrafoImc = document.createElement("p")
     paragrafoImc.textContent = funcaoIMC
+    paragrafoImc.classList.add("valor-imc")
     console.log(paragrafoImc)
     formulario.appendChild(paragrafoImc)
 
+})
+const botaoCalcularNovo = document.querySelector("#calcular-novo")
+botaoCalcularNovo.addEventListener("click", function(){
+    formulario.reset()
 })
 
 function calculoIMC(peso,altura){

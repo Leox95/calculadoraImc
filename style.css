@@ -1,7 +1,15 @@
+
 .container{
     width: 800px;
     margin: 0 auto;
     text-align: center;
+}
+.titulos{
+    border: solid 2px;
+    background-color: lightslategray;
+}
+p{
+    font-size: 20px;
 }
 table{
     margin:0 auto;
@@ -12,4 +20,24 @@ th{
 td, th{
 	border: 1px solid #000000;
 	padding: 8px 10px;
+}
+#peso, #altura{
+    display: block;
+    margin: 10px auto;
+}
+.botao{
+    display: block;
+}
+#confirmar{
+    display: inline;
+    margin: 5px auto;
+}
+#calcular-novo{
+    display: inline;
+}
+.resultado{
+    display: inline;
+}
+.valor-imc{
+    display: inline;
 }

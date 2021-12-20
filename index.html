@@ -9,12 +9,12 @@
 </head>
 <body>
     <section class="container">
-        <h1>Cálculo IMC </h1>
+        <h1 class="titulos">Cálculo IMC </h1>
         <p>O IMC (índice de massa corporal) é utilizado para<br>
             sabermos se a relação entre o nosso peso e altura<br>
             está ideal.
         </p>
-        <h2>Abaixo temos um vídeo informativo</h2>
+        <h2 class="titulos">Abaixo temos um vídeo informativo</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/e5OuLSDayxs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <table>
                 <thead>
@@ -29,11 +29,11 @@
                         <td>Muito abaixo do peso</td>
                     </tr>
                     <tr>
-                        <td>Entre 17 e 18.5</td>
+                        <td>Entre 17 e 18.9</td>
                         <td>Abaixo do peso</td>
                     </tr>
                     <tr>
-                        <td>Entre 18.5 e 24.9</td>
+                        <td>Entre 19 e 24.9</td>
                         <td>Peso normal</td>
                     </tr>
                     <tr>
@@ -53,20 +53,24 @@
                         <td>Obesidade 3 (mórbida)</td>
                     </tr>
                 </tbody>
-            </table>   
+            </table>    
     </section>
     <section class="container">
-        <h2>Calcule o seu imc clicando abaixo</h2>
+        <h2 class="titulos">Calcule o seu IMC clicando abaixo</h2>
 
         <form id="formulario">
             <label name="peso">Peso</label>
             <input id="peso" name="peso" type="text" placeholder="Ex: 80">
             <label name="altura">Altura</label>
             <input id="altura" name="altura" type="text" placeholder="EX: 1.80">
-            <button id="confirmar">Confirmar</button>
-            <p>Seu imc é de:</p>
+            <div class="botao">
+                <button id="confirmar">Confirmar</button>
+                <button id="calcular-novo">Calcular novo IMC</button>
+            </div>
+            <p class="resultado">Seu imc é de:</p>
         </form>
     </section>
+    <script src="condicoes.js"></script>
     <script src="imc.js"></script>
 </body>
 </html>
